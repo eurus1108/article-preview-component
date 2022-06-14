@@ -66,3 +66,84 @@ body {
   object-fit: cover;
   vertical-align: middle;
 }
+
+.article .article__card .article-card-solid .content-container {
+  padding: 3.6rem 3.2rem 2rem;
+}
+
+.article .article__card .article-card-solid .content-container h1 {
+  margin-bottom: 1.2rem;
+  font-size: var(--font-size-600);
+  line-height: 2.4rem;
+  letter-spacing: 0.0113em;
+  color: var(--neutral-700);
+}
+
+.article .article__card .article-card-solid .content-container p {
+  padding-right: 0.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.009em;
+}
+
+.article .article__card .article-card-solid .lower-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 3.2rem 2rem;
+}
+
+.article .article__card .article-card-solid .lower-section .avatar-field {
+  display: flex;
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .avatar-field
+  .avatar-media-container {
+  margin-right: 1.6rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 90rem;
+  overflow: hidden;
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .avatar-field
+  .avatar-media-container
+  img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .avatar-field
+  .avatar-info {
+  font-size: var(--font-size-500);
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .avatar-field
+  .avatar-info
+  h2,
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .avatar-field
+  .avatar-info
+  p {
+  font-size: inherit;
+  letter-spacing: 0.009em;
+  line-height: 2rem;
+}
