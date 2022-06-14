@@ -1,0 +1,177 @@
+:root {
+  --neutral-700: hsl(217, 19%, 35%);
+  --neutral-600: hsl(214, 17%, 51%);
+  --neutral-500: hsl(212, 23%, 69%);
+  --neutral-400: hsl(210, 46%, 95%);
+  --neutral-300: hsl(0, 0%, 100%);
+  --font-size-700: 2rem;
+  --font-size-600: 1.6rem;
+  --font-size-500: 1.3rem;
+  --ds-500: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+  --ds-400: 0 1rem 2rem var(--neutral-500);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: var(--font-size-500);
+  color: var(--neutral-600);
+  background-color: var(--neutral-400);
+}
+
+.h-wrapper {
+  padding: 0 2.4rem;
+}
+
+@media only screen and (min-width: 997px) {
+  .h-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+}
+
+.article {
+  padding-top: 7.4rem;
+}
+
+.article__card {
+  width: 100%;
+  background-color: var(--neutral-300);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.article .article__card .article-card-media-container {
+  max-width: 32.7rem;
+  width: 100%;
+}
+
+.article .article__card .article-card-media-container img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.article .article__card .article-card-solid {
+  transition: 300ms ease-in-out;
+}
+
+.article .article__card .article-card-solid .content-container {
+  padding: 3.6rem 3.2rem 2rem;
+}
+
+.article .article__card .article-card-solid .content-container h1 {
+  margin-bottom: 1.2rem;
+  font-size: var(--font-size-600);
+  line-height: 2.4rem;
+  letter-spacing: 0.0113em;
+  color: var(--neutral-700);
+}
+
+.article .article__card .article-card-solid .content-container p {
+  padding-right: 0.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.009em;
+}
+
+.article .article__card .article-card-solid .lower-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 3.2rem 2rem;
+}
+
+.article .article__card .article-card-solid .lower-section .avatar-field {
+  display: flex;
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .avatar-field
+  .avatar-media-container {
+  margin-right: 1.6rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 90rem;
+  overflow: hidden;
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .avatar-field
+  .avatar-media-container
+  img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .avatar-field
+  .avatar-info {
+  font-size: var(--font-size-500);
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .avatar-field
+  .avatar-info
+  h2,
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .avatar-field
+  .avatar-info
+  p {
+  font-size: inherit;
+  letter-spacing: 0.009em;
+  line-height: 2rem;
+}
+
+.article .article__card .article-card-solid .lower-section .share {
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: var(--neutral-400);
+  border: none;
+  border-radius: 90rem;
+  cursor: pointer;
+  transition: 300ms ease;
+}
+
+.article .article__card .article-card-solid .lower-section .share:hover {
+  background-color: var(--neutral-600);
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .share:hover
+  svg
+  path {
+  fill: var(--neutral-300);
+}
