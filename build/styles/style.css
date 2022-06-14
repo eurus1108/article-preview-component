@@ -67,6 +67,10 @@ body {
   vertical-align: middle;
 }
 
+.article .article__card .article-card-solid {
+  transition: 300ms ease-in-out;
+}
+
 .article .article__card .article-card-solid .content-container {
   padding: 3.6rem 3.2rem 2rem;
 }
@@ -146,4 +150,28 @@ body {
   font-size: inherit;
   letter-spacing: 0.009em;
   line-height: 2rem;
+}
+
+.article .article__card .article-card-solid .lower-section .share {
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: var(--neutral-400);
+  border: none;
+  border-radius: 90rem;
+  cursor: pointer;
+  transition: 300ms ease;
+}
+
+.article .article__card .article-card-solid .lower-section .share:hover {
+  background-color: var(--neutral-600);
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .share:hover
+  svg
+  path {
+  fill: var(--neutral-300);
 }
