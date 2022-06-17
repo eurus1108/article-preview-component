@@ -31,6 +31,10 @@ body {
   background-color: var(--neutral-400);
 }
 
+ul {
+  list-style: none;
+}
+
 .h-wrapper {
   padding: 0 2.4rem;
 }
@@ -58,7 +62,6 @@ body {
 .article
   .article__card
   .article-card-media-container {
-  max-width: 32.7rem;
   width: 100%;
 }
 
@@ -70,10 +73,6 @@ body {
   height: 20rem;
   object-fit: cover;
   vertical-align: middle;
-}
-
-.article .article__card .article-card-solid {
-  transition: 300ms ease-in-out;
 }
 
 .article
@@ -109,18 +108,38 @@ body {
   .article__card
   .article-card-solid
   .lower-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 1.2rem 3.2rem 2rem;
+  transition: 300ms ease;
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section.active {
+  padding: 1.6rem 3.2rem;
+  background-color: var(--neutral-700);
 }
 
 .article
   .article__card
   .article-card-solid
   .lower-section
-  .avatar-field {
+  .avatar-field,
+.article
+  .article__card
+  .article-card-solid
+  .lower-section {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .avatar-field.hidden {
+  display: none;
 }
 
 .article
@@ -169,7 +188,7 @@ body {
   .lower-section
   .avatar-field
   .avatar-info
-  p {
+  .date {
   font-size: inherit;
   letter-spacing: 0.009em;
   line-height: 2rem;
@@ -193,7 +212,12 @@ body {
   .article__card
   .article-card-solid
   .lower-section
-  .share:hover {
+  .share:hover,
+article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .share.active {
   background-color: var(--neutral-600);
 }
 
@@ -203,6 +227,59 @@ body {
   .lower-section
   .share:hover
   svg
+  path,
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .share.active
+  svg
   path {
   fill: var(--neutral-300);
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .social-icons.hidden {
+  display: none;
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .social-icons,
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .social-icons
+  .list-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .social-icons
+  span {
+  margin-right: 2.1rem;
+  line-height: 2rem;
+  letter-spacing: 0.38em;
+  color: var(--neutral-500);
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .social-icons
+  .list-container
+  .list-item {
+  margin-right: 1.6rem;
 }
