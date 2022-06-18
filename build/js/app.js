@@ -16,12 +16,14 @@ button.addEventListener("click", function (e) {
     infoContainer.classList.add("active");
     avatarField.classList.add("hidden");
     socialIcons.classList.remove("hidden");
+    button.classList.add("active");
     isClick = true;
   } else {
     infoContainer.classList.remove("active");
     avatarField.classList.remove("hidden");
     socialIcons.classList.add("hidden");
+    button.classList.remove("active");
     isClick = false;
   }
-  console.log("click");
+  console.log(button);
 });

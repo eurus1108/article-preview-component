@@ -62,17 +62,19 @@ ul {
 .article
   .article__card
   .article-card-media-container {
+  position: relative;
   width: 100%;
+  height: 20rem;
+  overflow: hidden;
 }
 
 .article
   .article__card
   .article-card-media-container
   img {
+  position: absolute;
   width: 100%;
-  height: 20rem;
-  object-fit: cover;
-  vertical-align: middle;
+  top: -4%;
 }
 
 .article
@@ -201,19 +203,19 @@ ul {
   .share {
   width: 3.2rem;
   height: 3.2rem;
-  background-color: var(--neutral-400);
+  /* background-color: var(--neutral-400); */
   border: none;
   border-radius: 90rem;
   cursor: pointer;
   transition: 300ms ease;
 }
 
-.article
+/* .article
   .article__card
   .article-card-solid
   .lower-section
-  .share:hover,
-article
+  .share:hover, */
+.article
   .article__card
   .article-card-solid
   .lower-section
@@ -221,13 +223,13 @@ article
   background-color: var(--neutral-600);
 }
 
-.article
+/* .article
   .article__card
   .article-card-solid
   .lower-section
   .share:hover
   svg
-  path,
+  path, */
 .article
   .article__card
   .article-card-solid
@@ -268,7 +270,7 @@ article
   .lower-section
   .social-icons
   span {
-  margin-right: 2.1rem;
+  margin-right: 1.7rem;
   line-height: 2rem;
   letter-spacing: 0.38em;
   color: var(--neutral-500);
@@ -281,5 +283,31 @@ article
   .social-icons
   .list-container
   .list-item {
-  margin-right: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .social-icons
+  .list-container
+  .list-item
+  a {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.article
+  .article__card
+  .article-card-solid
+  .lower-section
+  .social-icons
+  .list-container
+  .list-item
+  a
+  img {
+  padding-bottom: 0.1rem;
+  vertical-align: middle;
 }
