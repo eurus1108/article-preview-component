@@ -345,6 +345,7 @@ ul {
   .article
     .article__card
     .article-card-media-container {
+    display: block;
     max-width: 28.5rem;
     height: 28rem;
     border-radius: 1rem 0 0 1rem;
@@ -358,6 +359,13 @@ ul {
     top: 0;
     max-width: 35rem;
     object-fit: cover;
+  }
+
+  .article
+    .article__card
+    .article-card-media-container,
+  .article .article__card .article-card-solid {
+    flex: 1;
   }
 
   .article .article__card .article-card-solid {
@@ -380,7 +388,7 @@ ul {
     .content-container
     h1 {
     font-size: var(--font-size-700);
-    line-height: 2rem;
+    line-height: 2.8rem;
   }
 
   .article
@@ -401,7 +409,7 @@ ul {
     .social-icons {
     position: absolute;
     top: -120%;
-    right: -63%;
+    right: -68%;
     transform: translate(-50%, -50%);
     z-index: 999;
     background-color: var(--neutral-700);
@@ -423,5 +431,14 @@ ul {
     width: 1.8rem;
     height: 1.8rem;
     background-color: var(--neutral-700);
+  }
+
+  .article
+    .article__card
+    .article-card-solid
+    .lower-section
+    .social-icons
+    span {
+    margin-right: 2.1rem;
   }
 }
