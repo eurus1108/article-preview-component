@@ -56,7 +56,6 @@ ul {
   width: 100%;
   background-color: var(--neutral-300);
   border-radius: 1rem;
-  overflow: hidden;
 }
 
 .article
@@ -76,6 +75,10 @@ ul {
 }
 
 @media only screen and (max-width: 546px) {
+  .article__card {
+    overflow: hidden;
+  }
+
   .article
     .article__card
     .article-card-media-container {
@@ -329,18 +332,23 @@ ul {
 }
 
 @media only screen and (min-width: 547px) {
+  .article {
+    padding: 0;
+  }
+
   .article__card {
     display: flex;
     max-width: 72rem;
     width: 100%;
-    overflow: visible;
   }
 
   .article
     .article__card
     .article-card-media-container {
     max-width: 28.5rem;
-    overflow: visible;
+    height: 28rem;
+    border-radius: 1rem 0 0 1rem;
+    overflow: hidden;
   }
 
   .article
@@ -349,14 +357,41 @@ ul {
     img {
     top: 0;
     max-width: 35rem;
-    width: auto;
-    height: auto;
     object-fit: cover;
   }
 
   .article .article__card .article-card-solid {
     z-index: 1;
+    padding: 3.2rem 4rem;
     background-color: var(--neutral-300);
+    border-radius: 0 1rem 1rem 0;
+  }
+
+  .article
+    .article__card
+    .article-card-solid
+    .content-container {
+    margin-bottom: 2rem;
+  }
+
+  .article
+    .article__card
+    .article-card-solid
+    .content-container
+    h1 {
+    font-size: var(--font-size-700);
+    line-height: 2rem;
+  }
+
+  .article
+    .article__card
+    .article-card-solid
+    .content-container,
+  .article
+    .article__card
+    .article-card-solid
+    .lower-section {
+    padding: 0;
   }
 
   .article
@@ -365,8 +400,28 @@ ul {
     .lower-section
     .social-icons {
     position: absolute;
-    top: -50%;
-    right: -50%;
+    top: -120%;
+    right: -63%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: var(--neutral-700);
+    padding: 1.8rem 3.6rem;
+    border-radius: 1rem;
+  }
+
+  .article
+    .article__card
+    .article-card-solid
+    .lower-section
+    .social-icons::after {
+    content: "";
+    position: absolute;
+    top: 106%;
+    left: 50%;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: -1;
+    width: 1.8rem;
+    height: 1.8rem;
     background-color: var(--neutral-700);
   }
 }
